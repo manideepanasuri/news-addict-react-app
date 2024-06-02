@@ -5,10 +5,11 @@ import tailwindcss from "tailwindcss";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base:"/news-addict-react-app/",
   css:{
     postcss:{
       plugins:[tailwindcss()]
     }
   },
-  base:"/news-addict-react-app/"
+  
 })
