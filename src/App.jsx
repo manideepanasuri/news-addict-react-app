@@ -2,7 +2,7 @@ import { Component } from 'react'
 import Navbar from './components/Navbar'
 import NewsComponet from './components/NewsComponet'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider
 } from "react-router-dom";
 
@@ -14,41 +14,41 @@ export default class App extends Component {
 
     let apiKey="0f0867f8b3961cea799efe4248aacb55";
 
-    const router=createBrowserRouter([
+    const router=createHashRouter([
       {
-        path:"/news-addict-react-app/",
+        path:"/",
         element:<><Navbar /><NewsComponet key="home" apiKey={"apikey="+apiKey} country={"country=in"} category={"category=general"} lang={"lang=en"}/></>
       },
       {
-        path:"/news-addict-react-app/general",
+        path:"/general",
         element:<><Navbar /><NewsComponet key="general" apiKey={"apikey="+apiKey} country={" "} category={"category=general"} lang={"lang=en"}/></>
       },
       {
-        path:"/news-addict-react-app/sports",
+        path:"/sports",
         element:<><Navbar /><NewsComponet key="sports" apiKey={"apikey="+apiKey} country={"country=in"} category={"category=sports"} lang={"lang=en"}/></>
       },
       {
-        path:"/news-addict-react-app/world",
+        path:"/world",
         element:<><Navbar /><NewsComponet key="world" apiKey={"apikey="+apiKey} category={"category=general"} lang={"lang=en"}/></>
       },
       {
-        path:"/news-addict-react-app/business",
+        path:"/business",
         element:<><Navbar /><NewsComponet key="business" apiKey={"apikey="+apiKey} country={""} category={"category=business"} lang={"lang=en"}/></>
       },
       {
-        path:"/news-addict-react-app/technology",
+        path:"/technology",
         element:<><Navbar /><NewsComponet key="technology" apiKey={"apikey="+apiKey} country={""} category={"category=technology"} lang={"lang=en"}/></>
       },
       {
-        path:"/news-addict-react-app/entertainment",
+        path:"/entertainment",
         element:<><Navbar /><NewsComponet key="entertainment" apiKey={"apikey="+apiKey} country={""} category={"category=entertainment"} lang={"lang=en"}/></>
       },
       {
-        path:"/news-addict-react-app/science",
+        path:"/science",
         element:<><Navbar /><NewsComponet key="science" apiKey={"apikey="+apiKey} country={""} category={"category=science"} lang={"lang=en"}/></>
       },
       {
-        path:"/news-addict-react-app/health",
+        path:"/health",
         element:<><Navbar /><NewsComponet key="health" apiKey={"apikey="+apiKey} country={""} category={"category=health"} lang={"lang=en"}/></>
       }
     ])
