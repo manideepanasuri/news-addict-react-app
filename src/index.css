@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn{
+  @apply p-2 shadow-md hover:shadow-lg active:shadow-lg rounded-md
+}
+.btn-enabled{
+  @apply p-2 shadow-md hover:shadow-lg active:shadow-lg rounded-md bg-gray-900 text-white
+}
