@@ -2,7 +2,11 @@
 
 <p align="center"><img src="https://socialify.git.ci/manideepanasuri/news-addict-react-app/image?language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit+Board&amp;stargazers=1&amp;theme=Dark" alt="project-image"></p>
 
-# News Addict: React App for News Aggregation
+<h2>🚀 Demo</h2>
+
+[https://manideepanasuri.github.io/news-addict-react-app/](https://manideepanasuri.github.io/news-addict-react-app/)
+
+
 
 This React application, [News Addict](https://github.com/manideepanasuri/news-addict-react-app), allows users to explore news articles from various sources by fetching data from an external API and dynamically rendering the content.
 
